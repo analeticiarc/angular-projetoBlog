@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;600&family=Quicksand:wght@400;500&display=swap');
+
+.container__content{
+    border: 1px solid white;
+    width: 100%;
+    height: 100vh;
+
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container__content > a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #C2185B;
+}
+
+.content__cover > img{
+    border: 5px solid #FFD1DC;
+    border-radius: 5px;
+    width: 500px;
+    min-width: 500px;
+    height: 300px;
+}
+
+.content__title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #C2185B;
+}
+
+.content__description{
+    margin-top: 8px;
+    font-family: 'Quicksand', sans-serif;
+    color: #D14F81;
+}
