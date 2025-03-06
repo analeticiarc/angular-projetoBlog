@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;600&family=Quicksand:wght@400;500&display=swap');
+
+.container__big-card{
+
+    margin-left: 20px;
+    margin-right: 20px;
+
+    width: 650px;
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    .big-card__title > h1 {
+        margin-top: 15px;
+        width: 100%;
+        min-width: 600px;
+    }
+
+    .big-card__title > h1 > a{
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        color: #C2185B;
+    }
+    
+    .big-card__description > p{
+        margin-top: 8px;
+        width: 100%;
+        min-width: 600px;
+        margin-bottom: 20px;
+    }
+
+    .big-card__description > p > a {
+        margin-top: 8px;
+        font-family: 'Quicksand', sans-serif;
+        color: #D14F81;
+    }
+
+    .big-card__photo > img {
+        width: 100%;
+        min-width: 600px;
+    }
+
+}

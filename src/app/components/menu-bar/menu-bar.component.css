@@ -1,0 +1,21 @@
+
+
+.container__menu-bar > ul{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.container__menu-bar > ul > li > a{
+    color: #D15D93; 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; 
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.container__menu-bar > ul > li{
+    margin-right: 20px;
+    list-style: none;
+    color: #D15D93;
+}

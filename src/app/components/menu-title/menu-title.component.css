@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;600&family=Quicksand:wght@400;500&display=swap');
+
+.container__menu-title{
+    color: #F56C9D;
+  }
+  
+  .container__menu-title > h1{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 135px;
+    font-family: 'Lobster', sans-serif;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container__menu-title > hr{
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
