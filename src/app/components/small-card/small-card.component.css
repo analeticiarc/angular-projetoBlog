@@ -3,9 +3,10 @@
 .container__small-card-separator{
     margin-right: 20px;
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 
     width: 800px;
+    height: 30px;
 }
 
 .container__small-card-content{
@@ -39,6 +40,8 @@
 }
 
 
-.container__small-card-separator{
-    margin-top: 10px;
+.container__small-card-separator > hr{
+    border: 0; 
+    height: 0.2px;
+    background-color: #D14F81; 
 }

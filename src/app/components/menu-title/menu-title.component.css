@@ -17,3 +17,9 @@
     margin-top: 20px;
     margin-bottom: 5px;
   }
+
+  hr{
+    border: 0; 
+    height: 0.2px;
+    background-color: #D14F81;
+  }

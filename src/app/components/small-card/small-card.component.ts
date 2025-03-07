@@ -1,7 +1,9 @@
 import { Component, Input, OnInit, ChangeDetectorRef } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-small-card',
+  imports:[RouterModule],
   templateUrl: './small-card.component.html',
   styleUrls: ['./small-card.component.css']
 })
@@ -14,7 +16,7 @@ export class SmallCardComponent implements OnInit {
   @Input() 
   cardDescription: string = "";
   @Input() 
-  Id: string = "0";
+  Id: string = "";
 
   constructor(private cdRef: ChangeDetectorRef) { }
 

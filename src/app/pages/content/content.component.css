@@ -37,3 +37,16 @@
     font-family: 'Quicksand', sans-serif;
     color: #D14F81;
 }
+
+.content__text{
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #333333;
+}
+
+.content__text > p{
+    margin-top: 10px;
+}

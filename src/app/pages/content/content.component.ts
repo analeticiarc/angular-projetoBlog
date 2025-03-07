@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import {dataFake} from '../../data/dataFake'
 
 @Component({
   selector: 'app-content',
@@ -8,16 +10,43 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentComponent implements OnInit{
 
-  photoCover:string="https://cinebuzz.com.br/media/uploads/meninas_malvadas_a_nova_cinderela_e_mais_filmes_que_marcaram_os_anos_2000_e_amamos_ate_hoje.jpg"
-  contentTitle:string="\"Meninas Malvadas\", \"As Branquelas\" e outros filmes dos anos 2000 que moram no meu coração"
-  contentDescription:string="Uma seleção dos filmes mais inesquecíveis dos anos 2000, que sempre reassisto e continuam especiais para mim"
+  photoCover:string=""
+  contentTitle:string=""
+  contentDescription:string=""
+  publicationText1:string=""
+  publicationText2:string=""
+  publicationText3:string=""
+  publicationText4:string=""
+  publicationText5:string=""
 
-  constructor(){
+  private id:string | null = "0"
 
-  }
+  constructor(
+    private route:ActivatedRoute
+  ){}
 
   ngOnInit(): void {
-    
+    this.route.paramMap.subscribe( value =>
+      this.id = (value.get("id"))
+    )
+
+    this.setValuesToComponent(this.id)
   }
+
+  setValuesToComponent(id: string | null) {
+    const result = dataFake.filter(article => article.id === (id ?? "0"))[0];
+  
+    if (result) {
+      this.contentTitle = result.title;
+      this.contentDescription = result.description;
+      this.photoCover = result.photo;
+      this.publicationText1 = result.paragrafo1 ?? "";
+      this.publicationText2 = result.paragrafo2 ?? "";
+      this.publicationText3 = result.paragrafo3 ?? "";
+      this.publicationText4 = result.paragrafo4 ?? "";
+      this.publicationText5 = result.paragrafo5 ?? "";
+    }
+  }
+  
 
 }
