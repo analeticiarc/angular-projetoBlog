@@ -5,7 +5,7 @@ import { MenuBarComponent } from "./components/menu-bar/menu-bar.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HomeComponent, MenuBarComponent],
+  imports: [RouterOutlet, MenuBarComponent],
   standalone: true,
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

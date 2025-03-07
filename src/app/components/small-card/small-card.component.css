@@ -14,7 +14,7 @@
     flex-direction: row;
 }
 
-.small-card__title > h1 >{
+.small-card__title > h1 {
     display: flex;
     justify-content: center;
     align-items: center;
