@@ -16,3 +16,11 @@ Além de praticar minhas habilidades com Angular, TypeScript, HTML e CSS, esse p
 - ✅ TypeScript  
 - ✅ HTML5  
 - ✅ CSS3  
+
+---
+
+## 📚 Imagem do Blog
+
+![blogInicial](https://github.com/user-attachments/assets/c3d16556-0e93-481a-9e2d-aeaae1197c87)
+![image](https://github.com/user-attachments/assets/86620828-ba7e-4d6d-bf4f-04bfb53bae51)
+
